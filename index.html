@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    a{
+  text-decoration: none;
+  color: black;
+  position:relative;
+}
+.a1:before{
+content: "";
+  background: black;
+  position: absolute;
+    
+  bottom: 0;
+  right:0;
+  width: 0%;
+  height: 1px;
+transition: 0.5s; 
+}
+.a1:hover:before{
+width: 100%;
+   
+  
+}
+.text{
+background:#ccc;
+  padding: 18px;
+  padding-left: 4px;
+  width: 184px;
+  text-align: center;
+  overflow:hidden;
+  cursor: pointer;
+}
+.span1:before{
+content:"''";
+  position: relative;
+  right: 15px;
+  top:-5px;
+  font-size:20px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px 12px ;
+}
+.span2:after{
+content:"''";
+  position: relative;
+  left: 15px;
+  top:-5px;
+  font-size:20px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px 12px 
+}
+  .p1, .p2, .p3{
+    position:relative;
+  }
+.p1:before{
+content: "";
+  position: absolute;
+  background: black;
+  width: 80%;
+  height: 1px;
+  bottom:0;
+  left:120%;
+    transition:0.5s;
+}
+    .p2:before{
+content: "";
+  position: absolute;
+  background: black;
+  width: 80%;
+  height: 1px;
+  bottom:0;
+  left:-120%;
+  transition:0.2s;
+}
+.p3:before{
+content: "";
+  position: absolute;
+  background: black;
+  width: 80%;
+  height: 1px;
+  bottom:0;
+  left:120%;
+  transition:0.4s;
+  
+}
+.text:hover .p1:before{
+left:10%;
+}
+.text:hover .p2:before{
+left:20%;
+}
+.text:hover .p3:before{
+left:0%;
+}
+  </style>
+</head>
+<body>
+  <a href="" class="a1">Hello, World!</a><br>
+  <a href="" class="a2">Hello, World!</a><br>
+  <a href="" class="a3">Hello, World!</a><br>
+  <div class="text">
+    <p class="p1"><span class="span1">Жизнь это-</span></p>
+    <p class="p2">пыль на </p>
+    <p class="p3"><span class="span2">дорогах Вселенной</span></p>
+  </div>
+</body>
+</html>
